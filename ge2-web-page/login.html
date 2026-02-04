@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang = "gr">
+    <head>
+        <title>Eco-Tracker</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/stylemain.css">
+        <link rel="stylesheet" href="css/styleregister-login.css">
+    </head>
+    <body>
+        <div class="header">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/leaf_logo.png" style="width:42px;height:42px;">
+                    </a>
+                </div>
+                <div class="menu">
+                    <button class="navbutton" onclick="goHome()">Αρχική</button>
+                    <button class="navbutton" onclick="goActions()">Δράσεις</button>
+                    <button class="navbutton" onclick="goSubmit_Actions()">Υποβολή Δράσης</button>                    
+                </div>
+                <div class="login">
+                    <button class="login-btn" onclick="goLogin()">Είσοδος</button>
+                </div>
+        </div>
+        
+        <section class="page-container">
+            <div class="page-header">
+
+                <h1>Είσοδος Χρήστη</h1>
+                <p><b>Συνδέσου για να διαχειριστείς και να παρακολουθείς τις δράσεις σου.</b></p>
+
+            </div>
+
+            <div class="window-section">
+                <div class="window">
+                    <div class="form-container">
+                        <div class="field">
+                            <label><b>Όνομα Χρήστη (username)</b></label>
+                            <input type="username" placeholder="π.χ. eco_user123">
+                        </div>
+                    </div>
+
+                    <div class="form-container">
+                        <div class="field">
+                            <label><b>Κωδικός Πρόσβασης</b></label>
+                            <input type="password">
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="submit-btn">Εγγραφή</button>
+                    </div>
+
+                    <div>
+                        <label>
+                            Δεν εχεις λογαριασμό;
+                        </label>
+                        <a href="register.html"> Εγγράψου έδω.</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <div class="footer">
+            <footer>
+                <p><a href = "pdf/terms_of_use_demo.pdf">Οροι Χρησης </a> |
+                <a href="pdf/privacy_policy_demo.pdf">Πολιτικη Απορρητου</a></p>
+            </footer>
+        </div>
+
+    </body>
+</html>
+<script>
+    function goHome() {
+        window.location.href = "index.html";
+    }
+
+    function goActions() {
+        window.location.href = "actions.html";
+    }
+
+    function goSubmit_Actions() {
+        window.location.href = "submit-action.html";
+    }
+
+    function goLogin() {
+        window.local.href = "login.html";
+    }
+</script>

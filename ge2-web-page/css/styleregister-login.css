@@ -1,0 +1,93 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  background: #f3f8f4;
+}
+
+.page-header h1 {
+  color: #1e4e3c;
+  margin-bottom: 5px;
+}
+
+.page-header p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e4f3c;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f3f8f4;
+    color: #1e4f3c;
+    text-align: center;
+}
+
+.window-section {
+  padding: 40px 20px;
+}
+
+.window {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  overflow: hidden;
+  padding: 25px;
+}
+
+.form-container {
+  margin-bottom: 15px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.field {
+  display:  flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  background: #1e4e3c;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.window > div:last-child {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.window a {
+  color: #1e4e3c;
+}

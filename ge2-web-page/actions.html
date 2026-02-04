@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang = "gr">
+    <head>
+        <title>Eco-Tracker</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/stylemain.css">
+        <link rel="stylesheet" href="css/styleaction.css">
+    </head>
+
+    <body>
+        <div class="header">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/leaf_logo.png" style="width:42px;height:42px;">
+                    </a>
+                </div>
+                <div class="menu">
+                    <button class="navbutton" onclick="goHome()">Αρχική</button>
+                    <button class="actions" onclick="goActions()">Δράσεις</button>
+                    <button class="navbutton" onclick="goActionSubmit()">Υποβολή Δράσης</button>                     
+                </div>
+                <div class="login">
+                    <button class="login-btn" onclick="goLogin()">Είσοδος</button>
+                </div>
+        </div>
+
+        <div class="page-container">
+
+            <div class="h1">
+                <p><b>Δράσεις</b></p>
+                <button class="button" onclick="goActionSubmit()">Υποβολή Δράσης</button>
+            </div>
+        
+        <section class="window-section">
+                <div class="window">
+
+                    <div class="window-header">
+                        <span class="window-title">Αναδασώσεις</span>
+                        <button class = "toggle-btn">▼</button>
+                    </div>
+
+                    <div class="window-body">
+
+                        <div class="inner-box">
+                            <h3>Δεντροφύτευση στον Υμηττό</h3>
+                            <p>Εθελοντική δράση αναδάσωσης με φυτευση 300 δενδρυλλίων σε καμένη περιοχή του Υμηττού.</p>
+                            <button class="button" onclick="goToAction()">Περισσότερα</button>
+                        </div>
+
+                        <div class="inner-box">
+                            <h3 class="h3">Αναδάσωση στη Βόρεια Εύβοια</h3>
+                            <p>Συλλογική δραση αναδάσωσης σε πυρόπληκτη περιοχη, με συμμετοχή τοπικών συλλόγων και φοιτητών.</p>
+                            <button class="button">Περισσότερα</button>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+        
+        <section class = "window-section">
+            <div class="window">
+                <div class="window-header">
+                    <span class="window-title">Καθαρισμοί παραλιών</span>
+                    <button class = "toggle-btn">▼</button>
+                </div>
+                
+                <div class="window-body">
+                    <h3>Καθαρισμός παραλίας Σχοινιά</h3>
+                    <p>Συλλογή απορριμάτων και καταγραφή τύπων πλαστικού σε συνεργασία με σχολεία της περιοχής.</p>
+                    <button class="button">Περισσότερα</button>
+                </div>
+            </div>
+        </section>
+
+        <section class = "window-section">
+            <div class="window">
+                <div class="window-header">
+                    <span class="window-title">Ανακύκλωση</span>
+                    <button class = "toggle-btn">▼</button>
+                </div>
+                
+                <div class="window-body">
+                    <h3>Δεν εχουν καταχωρηθεί ακόμη δράσεις για την κατηγορία Ανακύκλωση</h3>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer">
+            <footer>
+                <p><a href = "pdf/terms_of_use_demo.pdf">Οροι Χρησης </a> |
+                <a href="pdf/privacy_policy_demo.pdf">Πολιτικη Απορρητου</a></p>
+            </footer>
+        </div>
+    </div>
+    </body>
+
+</html>
+
+<script>
+  document.querySelectorAll('.toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const section = btn.closest('.window-section');
+      section.classList.toggle('open');
+
+      btn.textContent = section.classList.contains('open') ? '▲' : '▼';
+    });
+  });
+</script>
+
+<script>
+    function goHome() {
+        window.location.href = "index.html";
+    }
+
+    function goActions() {
+        window.location.href = "actions.html";
+    }
+
+    function goActionSubmit() {
+        window.location.href = "submit-action.html";
+    }
+
+    function goToAction() {
+        window.location.href = "actions/action1.html";
+    }
+
+    function goLogin() {
+        window.location.href = "login.html";
+    }
+
+</script>

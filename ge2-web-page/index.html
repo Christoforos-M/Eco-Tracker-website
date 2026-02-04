@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang = "gr">
+    <head>
+        <title>Eco-Tracker</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/stylemain.css">
+    </head>
+    <body>
+            <div class="header">
+                <div class="logo">
+                    <a href="index.html ">
+                        <img src="images/leaf_logo.png" alt="" style="width:42px;height:42px;">
+                    </a>
+                </div>
+                <div class="menu">
+                    <button class="home" onclick="goHome()">Αρχική</button>
+                    <button class="navbutton" onclick="goActions()">Δράσεις</button>
+                    <button class="navbutton" onclick="goSubmit_Actions()">Υποβολή Δράσης</button>                    
+                </div>
+                <div class="login">
+                    <button class="login-btn" onclick="goLogin()">Είσοδος</button>
+                </div>
+            </div>
+
+            <div class="welcome">
+                <h1>Καλωσηρθατε στο Eco-Tracker!</h1>
+                <p>Καταγραφη και προβολη περιβαλλοντικων δρασεων με ενα κλικ. Ανακαλυψτε δρασεις, ενημερωσου, συμμετειχε και βοηθησε στην προστασια του περιβαλλοντος.</p>
+                <div class = "buttons">
+                    <button class = "button login1" onclick="goLogin()">Είσοδος</button>
+                    <button class = "button register" onclick="goRegister()">Εγγραφή</button>
+                </div>
+            </div>
+            
+            <div class = "main">
+                <div class="frame"></div>
+                <div class="frame"></div>
+                <div class="frame"></div>
+            </div>
+
+            <div class="footer">
+                <footer>
+                    <p><a href = "pdf/terms_of_use_demo.pdf">Οροι Χρησης </a> |
+                        <a href="pdf/privacy_policy_demo.pdf">Πολιτικη Απορρητου</a></p>
+                </footer>
+            </div>
+    </body>
+</html>
+
+<script>
+    function goHome() {
+        window.location.href = "index.html";
+    }
+
+    function goActions() {
+        window.location.href = "actions.html";
+    }
+
+    function goSubmit_Actions() {
+        window.location.href = "submit-action.html";
+    }
+
+    function goLogin() {
+        window.location.href = "login.html";
+    }
+
+    function goRegister() {
+        window.location.href = "register.html";
+    }
+</script>

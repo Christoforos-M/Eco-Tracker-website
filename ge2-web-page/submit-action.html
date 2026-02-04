@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang = "gr">
+    <head>
+        <title>Eco-Tracker</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/stylemain.css">
+        <link rel="stylesheet" href="css/style-submit.css">
+    </head>
+    <body>
+        <div class="header">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/leaf_logo.png" style="width:42px;height:42px;">
+                    </a>
+                </div>
+                <div class="menu">
+                    <button class="navbutton" onclick="goHome()">Αρχική</button>
+                    <button class="navbutton" onclick="goAction()">Δράσεις</button>
+                    <button class="submit" onclick="goToSubmit()">Υποβολή Δράσης</button>                    
+                </div>
+                <div class="login">
+                    <button class="login-btn" onclick="goLogin()">Είσοδος</button>
+                </div>
+        </div>
+
+        <div class="page-container">
+
+            <div class="page-header">
+
+                <h1>Υποβολή Νεας Δρασης</h1>
+                <p>Συμπλήρωσε τα παρακάτω πεδία για να καταχωρήσεις μια νέα περιβαλλοντική δράση.</p>
+
+            </div>
+        
+            <section class="window-section">
+                
+                <div class="window">
+                    
+                    <div class="form-container">
+
+                        <h3>Βασικές πληροφορίες</h3>
+
+                        <div class="row">
+                            <div class="field">
+                            <label>Κατηγορία δράσης</label>
+                            <select>
+                                <option>-- Επιλέξτε κατηγορία --</option>
+                                <option>Αναδασώσεις</option>
+                                <option>Καθαρισμοί παραλιών</option>
+                                <option>Ανακύκλωση</option>
+                            </select>
+                            </div>
+
+                            <div class="field">
+                            <label>Τίτλος δράσης</label>
+                            <input type="text" placeholder="π.χ. Δεντροφύτευση στον Υμηττό">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Υπότιτλος / σύντομη περιγραφή</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="field">
+                            <label>Αναλυτική περιγραφή δράσης</label>
+                            <textarea rows="4"></textarea>
+                        </div>
+
+                        <h3>Τοποθεσία</h3>
+                        <p>Συμπληρώστε τα βασικά στοιχεία τοποθεσίας.</p>
+                        <div class="row">
+                            <div class="field">
+                                <label>Όνομα τοποθεσίας</label>
+                                <input type="text">
+                            </div>
+
+                            <div class="field">
+                                <label>Δήμος</label>
+                                <input type="text">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="field">
+                            <label>Latitude</label>
+                            <input type="number">
+                            </div>
+
+                            <div class="field">
+                            <label>Longitude</label>
+                            <input type="number">
+                            </div>
+                        </div>
+
+                        <h3>Ημερομηνία δράσης</h3>
+
+                        <div class="row">
+                            <div class="field">
+                            <label>Ημερομηνία έναρξης</label>
+                            <input type="date">
+                            </div>
+
+                            <div class="field">
+                            <label>Ημερομηνία λήξης</label>
+                            <input type="date">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Εικόνα δράσης</label>
+                            <input type="file">
+                        </div>
+                            <button class="submit-btn">Υποβολή δράσης</button>
+                        </div>
+
+                </div>
+            </section>
+        </div>
+        
+        <div class="footer">
+            <footer>
+                <p><a href = "pdf/terms_of_use_demo.pdf">Οροι Χρησης </a> |
+                <a href="pdf/privacy_policy_demo.pdf">Πολιτικη Απορρητου</a></p>
+            </footer>
+        </div>
+
+    </body>
+</html>
+
+<script>
+    
+    function goHome() {
+        window.location.href="index.html";
+    }
+
+    function goAction() {
+        window.location.href="actions.html";
+    }
+
+    function goToSubmit() {
+        window.location.href="submit-action.html"
+    }
+
+    function goLogin() {
+        window.location.href="login.html";
+    }
+    
+</script>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang = "gr">
+    <head>
+        <title>Eco-Tracker</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/stylemain.css">
+        <link rel="stylesheet" href="../css/style-action-pages.css">
+    </head>
+    <body>
+
+        <div class="header">
+                <div class="logo">
+                    <a href="mainpage.html">
+                        <img src="../images/leaf_logo.png" alt="" style="width:42px;height:42px;">
+                    </a>
+                </div>
+                <div class="menu">
+                    <button class="navbutton" onclick="goHome()">Αρχική</button>
+                    <button class="actions" onclick="goActions()">Δράσεις</button>
+                    <button class="navbutton" onclick="goActionSubmit()">Υποβολή Δράσης</button>                     
+                </div>
+                <div class="login">
+                    <button class="login-btn" onclick="goLogin()">Είσοδος</button>
+                </div>
+        </div>
+        <section>
+            
+            <section class="info-section">
+                <img src="../images/shutterstock_604290230-1.jpg" alt="Εικονα" class="main-image">
+                <div class="window">
+                    <h1 class="title">Δεντροφύτευση στον Υμηττό</h1> 
+                    <p class="description">
+                        Εθελοντική δραση αναδάσωσης σε καμένη περιοχη του Υμηττού, με φυτευση 300 δενδρυλλίων και συμμετοχή φοιτητων, συλλόγων και κατοικων της περιοχης.
+                    </p>
+
+                    <div class="boxes">
+                        <div class="box">
+                            <h3>Τοποθεσια</h3> 
+                            <p>Υμηττός, Αττική</p>
+                        </div>
+                        <div class="box">
+                            <h3>Ημερομηνια</h3>
+                            <p>15 Μαρτιου 2025</p>
+                        </div>
+                        <div class="box">
+                            <h3>Κατηγορια</h3> 
+                            <p>Αναδασώσεις</p>
+                        </div>
+                    </div>
+
+                    <p class="bottom-description">
+                        Η δραση οργανωθηκε με στοχο την αποκατασταση ενος τμηματος του βουνου 
+                        που εχει πληγει απο προσφατες πυρκαγιες. οι συμμετεχοντες ενημερωθηκαν 
+                        αρχικα για ειδη δεντρων που θα φυτευσουν, τις βασικες αρχες προστασιας 
+                        του δασους και στον σωστο τροπο φυτευσης.
+                    </p>
+                    <p class="bottom-description">
+                        Κατα τη διαρκεια της ημερας οι εθελοντες χωριστηκαν σε μικρες ομαδες,
+                        ωστε να καλυφθει μεγαλυτερη εκταση. Παραλληλα εγινε καταγραφη της 
+                        περιοχης παρεμβασης ωστε να παρακολουθησει η εξελιξη των δεντρων σε
+                        επομενες επισκεψεις. Η δραση ολοκληρωθηκε με συντομη συζητησ για το πως 
+                        μικρες, επαναλαμβανομενες προσπαθειες μπορουν να συμβαλουν ουσιαστικα
+                        στην προστασια του φυσικου περιβαλλοντος. 
+                    </p>
+                </div>
+            </section>
+            
+        </section>
+        <div class="footer">
+            <footer>
+                <p><a href = "../pdf/terms_of_use_demo.pdf">Οροι Χρησης </a> |
+                <a href="../pdf/privacy_policy_demo.pdf">Πολιτικη Απορρητου</a></p>
+            </footer>
+        </div>
+
+    </body>
+</html>
+
+<script>
+    function goHome() {
+        window.location.href = "../index.html";
+    }
+
+    function goActions() {
+        window.location.href = "../actions.html";
+    }
+
+    function goActionSubmit() {
+        window.location.href = "../submit-action.html";
+    }
+
+    function goToAction() {
+        window.location.href = "../action1.html";
+    }
+
+    function goLogin() {
+        window.location.href = "../login.html";
+    }
+
+</script>

@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f4f9f5;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: #1e4f3c;
+}
+
+.logo {
+    flex: 1;
+}
+
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.login {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-btn {
+    padding: 4px 10px;
+    font-size: 16px;
+    line-height: 1;
+    border-radius: 12px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    white-space: nowrap;
+}
+
+
+.welcome {
+    padding: 120px;
+    text-align: center;
+    background: #f3f8f4;
+    color: #1e4e3c;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.main {
+    display:flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.frame {
+    flex: 1;
+    height: 230px;
+    background: #7ecaa3;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a{
+        float: none;
+        width: 100%;
+        }
+}
+
+.button1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 6);
+}
+
+.navbutton {
+    background-color: #1e4f3c;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+}
+
+.btn-group .button:hover {
+    background-color: #f3efce;
+}
+
+.home {
+    background-color: #f6efd1;
+    border: none;
+    color: #1e4e3c;
+    text-align: center;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+}
+
+.actions {
+    left: 27%;
+    background-color: #f6efd1;
+    border: none;
+    color: #1e4e3c;
+    text-align: center;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+            
+.submit {
+    background-color: #f6efd1;
+    border: none;
+    color: #1e4e3c;
+    text-align: center;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 8px;
+    left: 27%;
+}
+            
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f3f8f4;
+    color: #1e4f3c;
+    text-align: center;
+}
+
+.register {
+    border: 2px solid #1e4e3c;
+    border-radius: 12px;
+    width: 150px;
+    height: 35px;
+    font-size: 16px;
+}
+
+.login1 {
+    border: 2px solid #1e4e3c;
+    border-radius: 8px;
+    width: 150px;
+    height: 35px;
+    font-size: 16px;
+    background-color: #1e4e3c;
+    color: white;
+    padding: 6px 14px;
+}
